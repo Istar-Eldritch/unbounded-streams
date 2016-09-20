@@ -2,8 +2,8 @@
 
 const fs = require('fs');
 
-const fws = fs.createWriteStream('./bigfile');
-const filesize = 1024 * 1024 * 1024;
+const fws = fs.createWriteStream('./smallfile');
+const filesize = 1024 * 1024 / 4;
 const maxBuffer = 1024;
 
 function write(stream, bufferSize, acc, next) {

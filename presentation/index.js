@@ -97,6 +97,14 @@ export default class Presentation extends React.Component {
               </Appear>
           </Slide>
 
+          <Slide transition={[]} bgColor="primary">
+						<Heading margin="4rem" fit textColor="white">WHY & WHEN?</Heading>
+						<List textColor="white">
+							<Appear><ListItem>Transfering big amounts of data</ListItem></Appear>
+							<Appear><ListItem>In flight data crunching and manipulation</ListItem></Appear>
+						</List>
+					</Slide>
+
           <Slide transition={['fade']} bgImage={images.ferbenza.replace('/', '')} bgDarken={0.75} bgColor="secondary"
           notes='<ul><li>Brief unix pipelines.</li><li>Node basic block of IO construction</li><ul><li>Standard Streams</li><li>File system</li><li>Sockets (tcp, http)</li></ul></ul>'>
             <Heading fit textColor="secondary_light">You are already using</Heading>
@@ -109,7 +117,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={["slide"]} bgColor="primary_darkest">
-            <Heading textColor="white">Node.js IO</Heading>
+            <Heading textColor="white">Node.js I/O</Heading>
             <List textColor="primary_lightest" textAlign="left" bold>
               <Appear><ListItem>Standard Streams</ListItem></Appear>
               <Appear><ListItem>File system interaction</ListItem></Appear>
@@ -154,7 +162,7 @@ export default class Presentation extends React.Component {
             ranges={[
               { loc: [0, 21], title: "Writing to files" },
               { loc: [4, 5]},
-              { loc: [5, 6], note:"260KiB"},
+              { loc: [5, 6], note:"256KiB"},
               { loc: [7,19]},
               { loc: [8,9]},
               { loc: [10, 18]},
@@ -246,14 +254,6 @@ export default class Presentation extends React.Component {
             </Heading>
             <GiphyLocal/>
           </Slide>
-
-					<Slide transition={[]} bgColor="primary">
-						<Heading margin="4rem" fit textColor="white">WHY & WHEN?</Heading>
-						<List textColor="white">
-							<Appear><ListItem>Transfering big amounts of data</ListItem></Appear>
-							<Appear><ListItem>In flight data crunching</ListItem></Appear>
-						</List>
-					</Slide>
 
 					<Slide transition={['slide']} bgColor="white">
 						<Heading textColor="primary">Thank You</Heading>

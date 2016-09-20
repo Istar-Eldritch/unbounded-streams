@@ -2,4 +2,6 @@
 
 const fs = require('fs');
 
-fs.readFile('./bigfile', (err, data) => {});
+fs.readFile('/dev/urandom', (err, data) => {
+  fs.writeFile('/dev/null', data);
+});

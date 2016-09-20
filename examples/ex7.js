@@ -2,6 +2,7 @@
 
 const fs = require('fs')
 
-fs.createReadStream('./bigfile');
+const frs = fs.createReadStream('/dev/urandom');
+const fws = fs.createWriteStream('/dev/null');
 
-fs.on('data', data => {});
+frs.pipe(fws);

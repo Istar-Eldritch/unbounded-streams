@@ -13,8 +13,11 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "gif-stream": "^1.1.0",
+    "neuquant": "^1.0.2",
     "node-fetch": "^1.6.1",
     "normalize.css": "3.0.3",
+    "pixel-stream": "^1.0.3",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
     "spectacle": "^1.0.0",
